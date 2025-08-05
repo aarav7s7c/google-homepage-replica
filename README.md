@@ -14,4 +14,4 @@ This project was created to practice front-end web development skills, including
 ---
 
 ### Live Demo
-[View on GitHub Pages](https://your-username.github.io/google-homepage-clone/)
+[View on GitHub Pages]([https://your-username.github.io/google-homepage-clone/](https://aarav7s7c.github.io/google-homepage-replica/))
