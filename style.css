@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+/* MIAN CSS */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  background: #202124;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body a:is(:hover, :focus) {
+  text-decoration: underline;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 14px;
+  height: 60px;
+  padding: 6px;
+}
+
+#anslink1 {
+  margin-right: 5px;
+  padding: 5px;
+}
+#anslink2 {
+  margin-left: 5px;
+  padding: 5px;
+}
+.nav-list > li a {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: row;
+  color: #e8e8e8;
+  height: auto;
+}
+.nav-list .n1nav a {
+  color: #e8e8e8;
+}
+
+.nav-list .n1-2main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.nav-list .n2nav {
+  display: flex;
+  flex-direction: row;
+  margin-top: -4px;
+  padding-right: 11px;
+}
+.nav-list .n2nav a {
+  font-size: 13px;
+  color: #ffffff;
+}
+.nav-list .n2nav a,
+.n3nav a {
+  display: flex;
+  flex-direction: row;
+  padding-top: 13px 11px 0 0;
+}
+.agmail {
+  margin-right: 15px;
+}
+
+.appscon {
+
+  width: 48px;
+  height: 51.5px;
+  margin-bottom: 5px;
+}
+.appsconin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.appsconin:is(:hover, :focus) {
+  background-color: #2e3032;
+  transition: 0.4s;
+}
+.appsicon {
+  width: 24px;
+  height: 24px;
+}
+.mainpfp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 52px;
+}
+.pfp {
+  border-radius: 50%;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+.pfpicon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.pfpicon:is(:hover, :focus) {
+  background-color: #2e3032;
+  transition: 0.4s;
+}
+.nav-list .n3nav {
+  display: flex;
+  flex-direction: row;
+}
+.img-span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+li a {
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 24px;
+}
+
+.googleimg {
+  width: 272px;
+  height: 92px;
+  margin-bottom: 20px;
+}
+.mainsearchdiv {
+  margin: 0 auto;
+  padding-top: 6px;
+}
+
+.search-bar {
+  background-color: #5e6368 !important; 
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 688px;
+  height: 52px;
+  border-radius: 26px;
+  margin: 0 20px;
+}
+.searchiconimg {
+  width: 47px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 13px 0 14px;
+}
+.searchicon {
+  margin: auto;
+  width: 20px;
+}
+
+.txtareadi {
+  width: auto;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.txtarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding-top: 14px;
+  background-color: transparent;
+  color: #e8eaeb;
+  font-size: 16px;
+  resize: none;
+  cursor: text;
+  pointer-events: text;
+}
+.vnlicons {
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+.searchicons {
+  line-height: 44px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.aisearch {
+  display: flex;
+  align-items: center;
+  color: #e8e8e8;
+  border: 0.5px solid #e8e8e880;
+  margin-right: 9px;
+  min-height: 34px;
+  width: 97px;
+  padding: 0;
+  border-radius: 100px;
+  font-size: 14px;
+  justify-content: center;
+  background: inherit;
+}
+
+.n2searchcons {
+  display: inline-flex;
+  margin-right: 8px;
+}
+
+.search-btns {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  padding-top: 18px;
+  gap: 5px;
+}
+
+.search-btns-bt {
+  margin: 11px 3px;
+  padding: 0 17.5px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #e8eaed;
+  background-color: #303134;
+}
+.search-btns-bt:hover {
+  border: 1px solid #5f6368;
+}
+
+.googlelangs {
+  color: #bfbfbf;
+  font-size: 14px;
+  padding-top: 37px;
+  font-size: small;
+}
+
+.googlelangs a {
+  color: #99c3ff;
+}
+.footerbackdiv a {
+  color: #e7e8e2;
+}
+.indiadiv1 a,
+:is(.indiadiv1 a:hover, .indiadiv1 a:focus) {
+  cursor: text;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 15px;
+}
+.indiadiv1 {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+.indiadiv1,
+.mainfooter a {
+  font-size: 15px;
+}
+.mainfooter a {
+  font-size: 14px;
+  padding: 15px;
+}
+
+.footerbackdiv {
+  height: 100%;
+  width: 100%;
+  background-color: #171717;
+  color: #bfbfbf;
+  min-height: 48px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+}
+.footerlinks1 {
+  width: auto;
+  justify-content: space-between;
+}
+.mainfooter {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  border-top: 1px solid #424746;
+}
+@media (max-width: 1200px) {
+  .mainfooter {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 600px) {
+  .mainfooter {
+    display: flex;
+    flex-direction: column;
+    min-height: 95px;
+  }
+}
+
+.mainfooterr {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  padding-top: auto 0;
+  bottom: 0;
+  position: fixed;
+}
