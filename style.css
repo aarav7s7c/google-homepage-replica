@@ -151,7 +151,6 @@ body a:is(:hover, :focus) {
 }
 
 .appscon {
-
   width: 48px;
   height: 51.5px;
   margin-bottom: 5px;
@@ -224,7 +223,7 @@ li a {
 }
 
 .search-bar {
-  background-color: #5e6368 !important; 
+  background-color: #5e6368 !important;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -243,6 +242,29 @@ li a {
 .searchicon {
   margin: auto;
   width: 20px;
+}
+.aisearch {
+  display: flex;
+  align-items: center;
+  width: 94px;
+  height: 36px;
+}
+.aisearcha {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+.mainai {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 76px;
+  height: 20px;
+  color: #e8e8e8;
+  font-size: 14px;
+  white-space: nowrap;
+  margin: 0 5px 0 5px;
 }
 
 .txtareadi {
@@ -291,6 +313,7 @@ li a {
   font-size: 14px;
   justify-content: center;
   background: inherit;
+  cursor: pointer;
 }
 
 .n2searchcons {
@@ -326,14 +349,20 @@ li a {
 }
 
 .googlelangs {
+  display: flex;
   color: #bfbfbf;
   font-size: 14px;
   padding-top: 37px;
   font-size: small;
+  justify-content: center;
+  align-items: center;
 }
 
 .googlelangs a {
   color: #99c3ff;
+}
+.hindileft {
+  margin-left: 4.04px;
 }
 .footerbackdiv a {
   color: #e7e8e2;
@@ -393,6 +422,33 @@ li a {
     display: flex;
     flex-direction: column;
     min-height: 95px;
+    justify-content: space-around;
+  }
+  .aisearch {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    border: none;
+    clip: rect(0 0 0 0);
+  }
+  .googleimg {
+    width: 35%;
+    height: auto;
+  }
+  .search-bar {
+    height: 45px;
+  }
+  .googlelangs {
+    width: 100%;
+    flex-direction: column;
+    gap: 5px;;
+  }
+  .gapped {
+    display: flex;
+    gap:15px;
   }
 }
 
